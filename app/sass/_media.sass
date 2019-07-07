@@ -1,0 +1,651 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+// ≥992px
++media-breakpoint-down(md)
+  .page-header-menu
+    display: block
+    cursor: pointer
+    position: relative
+    .navigation-list__item+.navigation-list__item::after
+      display: none
+    .navigation
+      display: none
+      position: absolute
+      top: 100%
+      right: 0
+      flex-direction: column
+      width: 360px
+      box-shadow: 0 6px 13px 2px rgba(0,0,0,.1)
+      user-select: none
+      height: auto
+      z-index: 10
+      &-list
+        flex-direction: column
+        background-color: #fff
+        height: auto
+        &__link
+          padding: 12px 0
+      &.active
+        display: block
+  .navigation
+    display: none
+  .main-section
+    &__right
+      margin-right: 0
+      margin-left: -80px
+    &__left
+      position: relative
+      z-index: 2
+  .trust-section
+    &__container
+      align-items: flex-start
+    &__photo
+      margin-right: -400px
+  .choose-section
+    &-header
+      &__text
+        left: 200px
+        top: 110px
+  .choose-section-header
+    margin-bottom: 90px
+  .choose-section__decor1
+    left: -550px
+  .form
+    margin-left: -180px
+  .staff-section-list
+    width: 810px
+  .estetic-page 
+    .main-section__header
+      font-size: 48px
+    .main-section__right
+      pointer-events: none
+  .estetic-page .main-section__subheader
+    font-size: 36px
+  .care-section .header
+    font-size: 36px
+    padding: 0 20px
+  .care-section .header .text-decor
+    left: -24px
+    top: 22px
+  .care-section .header .text-decor--inverted
+    right: -24px
+    left: inherit
+  .care-section__text
+    padding: 0 15px
+  .care-section-list
+    flex-wrap: wrap
+  .care-section-list__item
+    width: 50%
+    margin-left: 0
+    &:first-child
+      margin-left: 0
+    &:last-child
+      width: 100%
+      margin-top: 40px
+  .care-section-list__item:first-child .care-section-list__icon
+    margin-left: 0
+  .care-section-list__header
+    align-items: center
+  .vinir-section__right
+    padding-right: 0
+  .vinir-section__left
+    padding-right: 30px
+  .implant-install-section .container, .vinir-install-section .container
+    padding-top: 40px
+    padding-bottom: 40px
+  .card-list__img img
+    width: 351px
+  .vinir-install-section__decor
+    display: none
+  .card-list__content
+    padding-right: 10px
+    padding-left: 30px
+  .card-list__item:nth-child(2n+2) .card-list__content
+    padding-right: 30px
+  .price-section .container
+    padding-bottom: 30px
+  .restavration-section .container
+    padding-top: 30px
+    padding-bottom: 30px
+  .restavration-section h3.header
+    font-size: 36px
+  .restavration-section__text p
+    padding-right: 0
+  .card-list__item
+    margin-top: 70px
+  .card-list__content
+    padding-top: 40px
+  .card-list__img img.no-shadow
+    transform: translateX(-30px) translateY(48px)
+  .resume-section .container
+    padding-top: 45px
+    padding-bottom: 35px
+  .resume-slider__image-i
+    width: 334px
+  .resume-slider__text-wrap
+    width: 334px
+  .full-doc-list__image
+    img
+      width: 275px
+  .implantation-page.estetic-page
+    .card-list__item:nth-child(2n+2) .card-list__content
+      text-align: right
+      padding-right: 30px
+    .card-list__img img.no-shadow
+      transform: translateX(63px) translateY(-12px)
+    .main-section__header
+      font-size: 36px
+      margin-top: 100px
+    .esta__decor,
+    .esta__decor2
+      display: none
+  .safe-implant-list__header-image
+    img
+      max-width: 100%
+  .safe-implant-list
+    align-items: flex-start
+  .safe-implant-list__header-content
+    padding-left: 35px
+    left: -10px
+  .safe-implant-list__header-content .text-decor
+    left: -45px
+  .sedation-section__decor
+    width: 569px
+    height: 402px
+    background-size: cover
+    top: 156px
+    left: -170px
+  .sedation-section .header
+    font-size: 36px
+  .sedation-section-list
+    flex-wrap: wrap
+    &__item
+      width: 100%
+      padding-right: 25%
+    &__item + &__item
+      margin-top: 20px
+  .sedation-section-list__text
+    margin-left: 10px
+  .sedation-section-list + .sedation-section__text
+    margin-left: -380px
+    padding: 0 15px
+  .implantation-page .price-section .header
+    padding-left: 0
+  .cons .header.header
+    font-size: 36px
+  .cons .header.header .text-decor
+    top: 20px
+  .full-doc-section__decor
+    display: none
+// ≥768px
++media-breakpoint-down(sm)
+  .card-list__caption
+    font-size: 14px
+    bottom: -18px
+  .main-page .page-header
+    top: 10px
+  .page-header-menu .navigation
+    width: 260px
+  .navigation-list__link
+    font-size: 16px
+  .page-header-menu
+    width: 50px
+    height: 50px
+  .navigation
+    display: none
+  .page-header__wrapper
+  .page-header__logo
+    padding-left: 12px
+    img
+      height: 25px
+  .header
+    font-size: 30px
+  .page-header
+    top: 10px
+  .main-section__subheader
+    font-size: 18px
+  .mobile
+    display: block
+  .desktop
+    display: none
+  .main-section__header
+    margin-top: 100px
+  .main-section__photo.mobile
+    display: flex
+    justify-content: flex-end
+    margin-bottom: 10px
+    img
+      box-shadow: 0px 6px 13px 2px rgba(0, 0, 0, 0.4)
+  .main-section__right
+    margin-left: -100px
+  .main-section .container
+    padding-bottom: 30px
+  .doc-section__container
+    flex-wrap: wrap
+  .doc-section__photo
+    margin-left: 0
+    margin-right: 0
+  .doc-section__info
+    padding: 0
+    margin-top: 20px
+  .doc-section__text
+    font-size: 18px
+  .doc-section__text
+    margin-bottom: 20px
+  .doc-section__name
+    font-size: 18px
+  .doc-section__prof
+    font-size: 16px
+    margin-top: 0
+  .doc-section__line
+    height: 100%
+  .doc-section .container
+    padding-bottom: 25px
+  .trust-section .container
+    padding-top: 25px
+    padding-bottom: 25px
+  .trust-section__photo
+    display: none
+  .trust-section-list
+    width: 100%
+    margin-right: 0
+  .trust-section__header
+    margin-bottom: 25px
+  .choose-section .container
+    padding-top: 15px
+  .choose-section-header__esta
+    font-size: 100px
+    margin-left: -10px
+    line-height: 90px
+  .choose-section-header__text
+    left: auto
+    right: 0
+    width: 220px
+    top: 45px
+    .text-decor
+      top: 10px
+      transform: translateY(0)
+  .doc-section__photo
+    text-align: center
+    width: 100%
+    img
+      height: 320px
+  .choose-section__decor1
+    display: none
+  .choose-section__decor2
+    display: none
+  .choose-section-header
+    margin-bottom: 70px
+  .choose-section-list__item
+    width: 100%
+    padding: 0 20px
+    margin-top: 40px
+  .choose-section-list
+    margin-top: -40px
+  .choose-section .container
+    padding-bottom: 20px
+  .form
+    width: auto
+    height: auto
+    background: none
+    background-color: #f9f6f2
+    padding: 10px
+    margin-left: 0
+    box-shadow: 0px 6px 13px 2px rgba(0, 0, 0, 0.1)
+    &__container
+      border: 1px solid #ddc7ba
+      padding: 30px 10px
+  .form .text-decor
+    display: none
+  .form__header
+    margin-bottom: 20px
+  .form__label
+    display: block
+    width: 100%
+  .form-input
+    height: 63px
+    width: 100%
+  .form__line
+    flex-wrap: wrap
+  .form__label+.form__label
+    margin-left: 0
+    margin-top: 20px
+  .form__line+.form__line
+    margin-top: 20px
+  .staff-section-list
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+  .staff-section-list
+    margin-left: 0
+  .staff-section-list__info
+    width: calc(100% - 10px)
+    right: 10px
+    bottom: 10px
+  .staff-section-list__name
+    font-size: 11px
+    font-weight: 300
+  .staff-section-list__prof
+    font-size: 9px
+  .staff-section-list__item
+    padding: 0 5px
+  .staff-section-list-slider
+    order: -1
+  .staff-section-list-slider__arrow
+    position: initial
+    width: 50%
+    margin-top: 20px
+  .map-section
+    background: none
+  .map-section__info
+    box-shadow: 0px 6px 13px 2px rgba(0, 0, 0, 0.15)
+  .map-section__container
+    display: block
+  .map-section__map
+    width: calc(100% + 30px)
+    height: 500px
+    margin-left: -15px
+    margin-right: -15px
+  .map-section__info
+    width: 260px
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 2
+    height: 320px
+    padding: 30px 10px 30px 15px
+  .map-section .container
+    padding-top: 200px
+    position: relative
+  .map-section__phone
+    font-size: 24px
+  .map-section__time
+    font-size: 18px
+  .map-section__info-bottom
+    font-size: 18px
+  .map-section__adress
+    padding: 5px 0 5px 30px
+  .map-section__phone .text-decor
+    display: none
+  .staff-section .container
+    padding-bottom: 50px
+  .map-section
+    height: auto
+  .footer__container
+    flex-wrap: wrap
+  .footer
+    .container
+      padding-top: 40px
+      padding-bottom: 30px
+  .footer-soc
+    width: 100%
+    order: -1
+    justify-content: center
+    margin-bottom: 30px
+  .staff-section__header
+    margin-bottom: 30px
+  .doc-popup
+    width: 100%
+  .doc-popup__image
+    width: 100%
+    margin-right: 0
+  .doc-popup__container
+    flex-wrap: wrap
+  .doc-popup .staff-section-list__info
+    margin-left: 0
+    margin-bottom: 10px
+    margin-top: 10px
+  .doc-popup__image
+    text-align: center
+    img
+      height: 200px
+  .doc-popup
+    padding: 20px
+  .staff-section-list__info
+    padding: 5px
+  .estetic-page .main-section__header
+    font-size: 36px
+  .estetic-page .main-section__subheader
+    font-size: 24px
+    margin-bottom: 210px
+  .estetic-page .main-section .esta__decor,
+  .estetic-page .main-section .esta__decor2
+    display: none
+  .estetic-page .main-section__right .girl_decor
+    width: 509px
+    height: 456px
+    background-size: cover
+  .estetic-page 
+    .main-section__right
+      left: 32%
+      position: absolute
+      bottom: 0
+    .care-section .container
+      padding-top: 40px
+      padding-bottom: 40px
+    .care-section .header
+      font-size: 30px
+      margin-bottom: 15px
+    .care-section .header .text-decor
+      left: -40px
+      top: 17px
+      &--inverted
+        left: inherit
+        right: -40px
+    .care-section-list__item
+      width: 100%
+      margin-top: 35px
+    .care-section-list__text
+      padding-left: 70px
+    .care-section-list__item:first-child .care-section-list__icon
+      margin-right: 17px
+    .vinir-section__container
+      flex-wrap: wrap
+    .vinir-section__left,
+    .vinir-section__right
+      width: 100%
+    .vinir-section__right
+      img
+        max-width: 100%
+    .vinir-section .container
+      padding-top: 24px
+    .vinir-section__left
+      padding-right: 0
+    .vinir-section__line
+      height: 400px
+    .vinir-section__header
+      margin-bottom: 15px
+    .implant-install-section .header, 
+    .vinir-install-section .header
+      font-size: 30px
+    .card-list__item
+      flex-wrap: wrap
+    .card-list__img-container
+      width: 100%
+    .card-list__content
+      padding: 0
+      margin-top: 20px
+      width: 100%
+    .card-list__img img
+      width: 280px
+      height: auto
+  .estetic-page .card-list__content
+    margin-top: 40px
+  .card-list__item:nth-child(2n+2) .card-list__content
+    order: 1
+  .estetic-page .card-list__img-container
+    display: flex
+    justify-content: center
+  .card-list__img::before
+    left: -20px
+    bottom: -20px
+  .card-list__item:nth-child(2n+2) .card-list__img::before
+    top: -20px
+    right: -20px
+  .price-section .container
+    padding-top: 35px
+  .price-section .header
+    font-size: 30px
+  .price-section .price-list__header
+    font-size: 18px
+  .estetic-page .form .header.header.header
+    font-size: 30px
+    margin-bottom: 30px
+  .restavration-section h3.header
+    font-size: 30px
+  .restavration-section h4.header
+    font-size: 30px
+  .estetic-page .card-list__item
+    &:first-child
+      margin-top: 30px
+  .card-list__header
+    margin-bottom: 15px
+  .resume-section .container
+    padding-top: 35px
+  .resume-slider__wrapper
+    flex-wrap: wrap
+    margin-top: -20px
+  .resume-slider__item
+    width: 100%
+    margin-top: 20px
+  .resume-slider__image-i
+    width: 320px
+  .resume-slider__text-wrap
+    width: 320px
+  .resume-slider__arrow--left
+    left: -10px
+  .resume-slider__arrow--right
+    right: -10px
+  .resume-slider__arrow
+    top: 172px
+    z-index: 3
+  .full-doc-section .full-doc-list
+    padding-left: 0
+  .full-doc-list__item
+    flex-wrap: wrap
+  .full-doc-list__image,
+  .full-doc-list__info
+    width: 100%
+  .full-doc-list__image
+    text-align: center
+  .full-doc-list__header
+    font-size: 18px
+  .full-doc-list__description
+    font-size: 16px
+  .full-doc-list__header-wrap
+    margin-left: 0
+  .full-doc-list__info
+    margin-left: 0
+  .full-doc-list__item:nth-child(2n+2) .full-doc-list__info
+    order: 1
+  .full-doc-list__item:nth-child(2n+2) .full-doc-list__header-wrap
+    margin-right: 0
+  .full-doc-list__item:nth-child(2n+2) .full-doc-list__text
+    padding-right: 0
+  .full-doc-section .container
+    padding-bottom: 30px
+  .full-doc-section .full-doc-list
+    margin-bottom: 30px
+  .owl-carousel .owl-item .full-doc-list__image img
+    width: 275px
+    margin: 0 auto
+  .full-doc-list__header .text-decor
+    display: none
+  .burger
+    left: 0
+  .implantation-page.estetic-page 
+    .main-section__header
+      margin-top: 35px
+      padding-right: 50px
+    .main-section__right
+      left: 50%
+      .girl_decor
+        width: 387px
+        height: 509px
+        background: url(../img/implant/girl_mobile.png) no-repeat center
+    .main-section__subheader
+      margin-bottom: 145px
+    .care-section .header
+      padding: 0 10px
+  .implantation-page .safe-implant-section .safe-implant-list
+    flex-wrap: wrap
+  .safe-implant-list__item
+    width: 100%
+  .safe-implant-list__item + .safe-implant-list__item
+    margin-top: 30px
+  .safe-implant-list__header-content
+    font-size: 20px
+  .implantation-page.estetic-page .card-list__img img.no-shadow
+    transform: translateX(8px) translateY(-37px)
+  .implantation-page .implant-install-section__text
+    margin-top: 1rem
+    padding: 0
+  .sedation-section__decor
+    width: 393px
+    height: 277px
+    background-size: cover
+    left: 60%
+    transform: translateX(-50%)
+  .sedation-section .container
+    padding-top: 35px
+    padding-bottom: 35px
+  .sedation-section .header
+    font-size: 30px
+  .sedation-section__content
+    padding-left: 0
+    padding-top: 285px
+  .sedation-section-list+.sedation-section__text
+    margin-left: 0
+    padding: 0
+  .sedation-section-list
+    margin: 30px 0
+  .cons .header.header
+    font-size: 30px
+  .cons-wrap
+    padding: 35px 10px
+  .cons__content
+    flex-wrap: wrap
+    justify-content: center
+  .cons__image
+    margin-right: 0
+  .cons__info
+    margin-top: 20px
+  .cons .form__submit
+    margin-top: 100px
+  .cons__price
+    bottom: 120px
+  .tip
+    margin: 15px
+  .tip__text
+    font-size: 18px
+  .implantation-page .resume-section .container
+    padding-bottom: 30px
+  .form-scroll
+    .container
+      padding-bottom: 30px
+  .form__success-message
+    font-size: 24px
+    padding-top: 0
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

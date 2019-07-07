@@ -1,0 +1,21 @@
+{
+  "name": "bower-skrollr",
+  "version": "0.6.26",
+  "main": "./skrollr.js",
+  "ignore": [
+    "bower.json",
+    "README.md"
+  ],
+  "dependencies": {},
+  "homepage": "https://github.com/egorkhmelev/bower-skrollr",
+  "_release": "0.6.26",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.6.26",
+    "commit": "a79b667f02b68690925737bb327cd02c95e0f97c"
+  },
+  "_source": "https://github.com/egorkhmelev/bower-skrollr.git",
+  "_target": "^0.6.26",
+  "_originalSource": "bower-skrollr",
+  "_direct": true
+}
