@@ -20,18 +20,20 @@ $(function () {
     });
   };
 
-  const sliderInit = (sliderName, prevButton, nextButton) => {
+  const sliderInit = (sliderName, prevButton, nextButton, autoplay = false) => {
     const owlPrevButton = document.querySelector(prevButton);
     const owlNextButton = document.querySelector(nextButton);
+
 
     const carouselSettings = {
       loop: true,
       dots: false,
       nav: false,
       items: 1,
+      autoplay: autoplay
     };
 
-    $owl = $('body').find(sliderName);
+    const $owl = $('body').find(sliderName);
 
     owlPrevButton.addEventListener('click', function () {
       $owl.trigger('prev.owl.carousel');
@@ -210,7 +212,7 @@ $(function () {
   initialize();
 
   function initialize() {
-    sliderInit('.resume-slider', '.resume-slider__arrow--left', '.resume-slider__arrow--right');
+    sliderInit('.resume-slider', '.resume-slider__arrow--left', '.resume-slider__arrow--right', true);
     const containerWidth = $(window).width();
     if (containerWidth > 1060) {
       // initialize owl-carousel if window screensize is less the 767px
