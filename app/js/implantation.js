@@ -28,6 +28,8 @@ $(function () {
       loop: true,
       dots: false,
       nav: false,
+	  autoplayTimeout: 10000,
+	  autoplayHoverPause: true,
       items: 1,
       autoplay: autoplay
     };
@@ -80,10 +82,10 @@ $(function () {
         rules: {
           userphone: {
             required: true,
-            digits: true
+            digits: false
           },
           username: {
-            required: true
+            required: false
           }
         },
         messages: {
@@ -118,6 +120,14 @@ $(function () {
   const navigationInit = () => {
     const navigationLinks = document.querySelectorAll('.burger-list__link');
     const headerElement = document.querySelector('.page-header');
+	const firstLink = document.querySelector('.zapisatsa');
+
+		firstLink.addEventListener('click', e => {
+			const anchorOffset = document.querySelector('.form-scroll').offsetTop - headerElement.offsetHeight;
+			$("html, body").animate({ scrollTop: anchorOffset }, 666);
+		})
+
+
 
     const onNavigationLinkClick = (e) => {
       const anchor = e.target.getAttribute('href');
@@ -177,7 +187,7 @@ $(function () {
         setTimeout(() => {
           currentTarget.classList.remove('open');
           menuList.classList.remove('active');
-        }, 5000);
+        }, 3000);
       } else {
         clearTimeout(timeout);
       }

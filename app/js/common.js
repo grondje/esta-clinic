@@ -38,7 +38,6 @@ $(function() {
 			dots: false,
 			nav: false,
 			autoplay: true,
-
 			responsive: {
 				0: {
 					items: 2
@@ -165,10 +164,10 @@ $(function() {
 				rules: {
 					userphone: {
 						required: true,
-						digits: true
+						digits: false
 					},
 					username: {
-						required: true
+						required: false
 					}
 				},
 				messages: {

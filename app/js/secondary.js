@@ -30,6 +30,8 @@ $(function () {
       dots: false,
       nav: false,
       items: 1,
+	  autoplayHoverPause: true,
+	  autoplayTimeout: 10000,
       autoplay: autoplay
     };
 
@@ -177,7 +179,7 @@ $(function () {
         setTimeout(() => {
           currentTarget.classList.remove('open');
           menuList.classList.remove('active');
-        }, 5000);
+        }, 3000);
       } else {
         clearTimeout(timeout);
       }
