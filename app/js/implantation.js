@@ -85,16 +85,16 @@ $(function () {
             digits: false
           },
           username: {
-            required: false
+            required: true
           }
         },
         messages: {
           userphone: {
-            required: 'Ошибка! Вы не ввели телефон',
-            digits: 'Ошибка! Введите только числовые значения без "+"'
+            required: 'Ошибка. Вы не ввели телефон',
+            digits: 'Ошибка. Введите только числовые значения без "+"'
           },
           username: {
-            required: 'Ошибка! Вы не ввели имя'
+            required: 'Ошибка. Вы не ввели имя'
           }
         },
         submitHandler: function (form) {
