@@ -133,6 +133,12 @@ $(function () {
 			const anchorOffset = document.querySelector('.sedation-section').offsetTop - headerElement.offsetHeight;
 			$("html, body").animate({ scrollTop: anchorOffset }, 666);
 		})
+		
+	const otherLink2 = document.querySelector('.card-list__anchor2');
+	otherLink2.addEventListener('click', e => {
+			const anchorOffset = document.querySelector('.form-scroll').offsetTop - headerElement.offsetHeight;
+			$("html, body").animate({ scrollTop: anchorOffset }, 666);
+		})
 
     const onNavigationLinkClick = (e) => {
       const anchor = e.target.getAttribute('href');
