@@ -122,11 +122,19 @@ $(function () {
 
   const navigationInit = () => {
     const navigationLinks = document.querySelectorAll('.burger-list__link');
-    const headerElement = document.querySelector('.page-header');
+    
+	const headerElement = document.querySelector('.page-header');
+	const firstLink = document.querySelector('.zapisatsa');
+		firstLink.addEventListener('click', e => {
+			const anchorOffset = document.querySelector('.form-scroll').offsetTop - headerElement.offsetHeight;
+			$("html, body").animate({ scrollTop: anchorOffset }, 666);
+		})
 
     const onNavigationLinkClick = (e) => {
       const anchor = e.target.getAttribute('href');
       const anchorOffset = document.querySelector(`.${anchor}`).offsetTop - headerElement.offsetHeight;
+
+
 
       e.preventDefault();
 

@@ -119,9 +119,10 @@ $(function () {
 
   const navigationInit = () => {
     const navigationLinks = document.querySelectorAll('.burger-list__link');
+	
+	
     const headerElement = document.querySelector('.page-header');
 	const firstLink = document.querySelector('.zapisatsa');
-
 		firstLink.addEventListener('click', e => {
 			const anchorOffset = document.querySelector('.form-scroll').offsetTop - headerElement.offsetHeight;
 			$("html, body").animate({ scrollTop: anchorOffset }, 666);
