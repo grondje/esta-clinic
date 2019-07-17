@@ -120,7 +120,6 @@ $(function () {
   const navigationInit = () => {
     const navigationLinks = document.querySelectorAll('.burger-list__link');
 	
-	
     const headerElement = document.querySelector('.page-header');
 	const firstLink = document.querySelector('.zapisatsa');
 		firstLink.addEventListener('click', e => {
@@ -133,28 +132,29 @@ $(function () {
 			const anchorOffset = document.querySelector('.sedation-section').offsetTop - headerElement.offsetHeight;
 			$("html, body").animate({ scrollTop: anchorOffset }, 666);
 		})
-		
+	
 	const otherLink2 = document.querySelector('.card-list__anchor2');
 	otherLink2.addEventListener('click', e => {
-			const anchorOffset = document.querySelector('.form-scroll').offsetTop - headerElement.offsetHeight;
+			const anchorOffset = document.querySelector('.cons-section').offsetTop - headerElement.offsetHeight;
 			$("html, body").animate({ scrollTop: anchorOffset }, 666);
 		})
-
+	
     const onNavigationLinkClick = (e) => {
       const anchor = e.target.getAttribute('href');
       const anchorOffset = document.querySelector(`.${anchor}`).offsetTop - headerElement.offsetHeight;
       console.log(anchor);
       console.log(document.querySelector(`.${anchor}`).offsetTop);
       console.log(headerElement.offsetHeight);
-
       e.preventDefault();
 
       $("html, body").animate({ scrollTop: anchorOffset }, 666);
     };
+	
 
     [...navigationLinks].forEach((navigationLink) => {
       navigationLink.addEventListener('click', event => {
         onNavigationLinkClick(event);
+		console.log(event);
       });
     });
   }
