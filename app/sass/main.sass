@@ -24,6 +24,10 @@ svg
 .crossed
 	text-decoration: line-through
 
+.nohover
+	&:hover
+		text-decoration: none
+
 body
 	font-size: 18px
 	min-width: 320px
@@ -111,6 +115,8 @@ body
 	&__subheader
 		font-size: 25px
 		font-weight: 300
+		&:hover
+			text-decoration: none
 	&__info
 		width: 215px
 		text-align: right
@@ -762,6 +768,8 @@ body
 			font-weight: 700
 			margin-bottom: 70px
 			color: $blue
+			&:hover
+				text-decoration: none
 		&__left
 			width: auto
 			padding-bottom: 40px
