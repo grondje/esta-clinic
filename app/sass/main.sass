@@ -153,11 +153,29 @@ body
 	.text-decor
 		top: 24px
 		transform: translateY(0)
+	&__decor4
+		position: absolute
+		width: 592px
+		height: 719px
+		background: url(../img/estet/decor3.png) no-repeat center
+		top: 1800px
+		left: -500px
+		pointer-events: none
+		z-index: 10;
+	&__decor5
+		position: absolute
+		width: 481px
+		height: 938px
+		background: url(../img/zond.png) no-repeat center
+		top: 2160px
+		right: -500px
+		pointer-events: none
+		z-index: 10;
 
 .doc-section
 	position: relative
 	&__line
-		height: 425px
+		height: 445px
 		background-color: #efefef
 		position: absolute
 		top: 0
@@ -249,15 +267,15 @@ body
 					margin-right: 12px
 					width: 27px
 					height: 24px
-			&:hover
-				&::after
-					opacity: 1
-				.trust-section-list__heading
-					color: $clear
-				.trust-section-list__image--inverted
-					opacity: 1
-				.trust-section-list__image--default
-					opacity: 0
+			//&:hover
+			//	&::after
+			//		opacity: 1
+			//	.trust-section-list__heading
+			//		color: $clear
+			//	.trust-section-list__image--inverted
+			//		opacity: 1
+			//	.trust-section-list__image--default
+			//		opacity: 0
 		&__item + &__item
 			margin-top: 40px
 		&__heading
@@ -285,8 +303,6 @@ body
 			position: absolute
 			top: 0
 			left: 0
-
-
 .choose-section
 	.container
 		padding-top: 120px
@@ -930,6 +946,10 @@ body
 			padding-left: 48px
 			margin-top: 15px
 	
+
+.therapy-page .care-section .container
+	padding-bottom: 0px
+	
 .vinir-section
 	position: relative
 	&__line
@@ -1094,6 +1114,7 @@ body
 		margin-bottom: 60px
 		p
 			padding-right: 70px
+
 
 .card-list
 	padding: 0
@@ -1552,7 +1573,7 @@ body
 			padding-right: 20px
 	.card-list__item:nth-child(2n+2) .card-list__content
 		padding-right: 40px
-		text-align: right
+		text-align: left
 	.safe-implant-section
 		background-color: #efefef
 		.container
