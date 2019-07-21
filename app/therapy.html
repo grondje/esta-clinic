@@ -34,6 +34,28 @@
 
 </head>
 
+
+<!-- WhatsHelp.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+7(958)7091333", // WhatsApp number
+            telegram: "esta_clinic", // Telegram bot username
+            call_to_action: "", // Call to action
+            button_color: "#FF6550", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "whatsapp,telegram", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /WhatsHelp.io widget -->
+
+
+
 <body>
 
 	<!-- Custom HTML -->
@@ -57,11 +79,11 @@
 								Цены
 							</a>
 						</li>
-						<li class="burger-list__item">
+						<!--li class="burger-list__item">
 							<a href="resume-section" class="burger-list__link">
 								Работы
 							</a>
-						</li>
+						</li-->
 						<li class="burger-list__item">
 							<a href="full-doc-section" class="burger-list__link">
 								Врачи
@@ -145,11 +167,11 @@
 									Цены
 								</a>
 							</li>
-							<li class="burger-list__item">
+							<!--li class="burger-list__item">
 								<a href="resume-section" class="burger-list__link">
 									Работы
 								</a>
-							</li>
+							</li-->
 							<li class="burger-list__item">
 								<a href="full-doc-section" class="burger-list__link">
 									Врачи
@@ -190,16 +212,6 @@
 					<li class="care-section-list__item">
 						<div class="care-section-list__header">
 							<div class="care-section-list__icon">
-								<img src="./img/estet/icon1.png" alt="">
-							</div>
-							<div class="care-section-list__header-text">Без боли</div>
-						</div>
-						<div class="care-section-list__text">
-						<p>С двойной анестезией вы не почувствуйте боли.</p>
-						</li>
-					<li class="care-section-list__item">
-						<div class="care-section-list__header">
-							<div class="care-section-list__icon">
 								<img src="./img/estet/icon3.png" alt="">
 							</div>
 							<div class="care-section-list__header-text">Спасаем зубы</div>
@@ -209,6 +221,19 @@
 						Мы сохраняем зубы живыми потому что всегда работаем с микроскопом и кариес-детекртором.
 						</p>
 					</li>
+					
+					<li class="care-section-list__item">
+						<div class="care-section-list__header">
+							<div class="care-section-list__icon">
+								<img src="./img/estet/icon1.png" alt="">
+							</div>
+							<div class="care-section-list__header-text">Без боли</div>
+						</div>
+						<div class="care-section-list__text">
+						<p>Многие люди с детства травмированны походами к стоматологу. 
+						   С современной аппаратурой и двойной анестезией, пациенты не чувствуют боли.</p>
+					</li>
+					
 					<li class="care-section-list__item">
 						<div class="care-section-list__header">
 							<div class="care-section-list__icon">
@@ -217,7 +242,7 @@
 							<div class="care-section-list__header-text">Надёжно и долговечно</div>
 						</div>
 						<div class="care-section-list__text">
-						<p>На пломбы и вкладки мы даем гарантию на 10 лет.</p></div>
+						<p>Наши пломбы стоят по 15 и по 20 лет, а на первые 10 лет мы даем гарантию.</p></div>
 					</li>
 				</ul>
 			</div>
@@ -251,9 +276,9 @@
 							</div>
 							<div class="card-list__text">
 							<p>На лечение кариеса отводится от часа до двух часов.</p>
-							<p>Сначала, врач удаляет поврежденные ткани с помощью микроскопа и кариес-детектора.
+							<p>Врач удаляет поврежденные ткани с помощью микроскопа и кариес-детектора.
 							Это предотвращает случайное проникновение в полость нерва и позволяет сохранить 
-							зуб живым даже при очень глубоком разрушении.</p>
+							зуб живым даже при глубоком разрушении.</p>
 							</div>
 						</div>
 					</li>
@@ -274,9 +299,9 @@
 							<div class="card-list__text">
 							<p>Мы работаем с композитными материалами Estalite и Enamel plus.
 							Пломба из этих материалов может прослужить более 15 лет.</p>
-							<p>Врач востанавливает анатомическую форму зуба -
-							это предотвращает появление вторичного кариеса под пломбой и правильно распределяет 
-							нагрузку на зубы.</p> 
+							<p>Врач точно востанавливает зуб -
+							это предотвращает деформацию пломбы и появление вторичного кариеса, и бережет соседние зубы правильно 
+							распределяя нагрузку.</p> 
 							</div>
 						</div>
 					</li>
@@ -298,11 +323,11 @@
 							</div>
 							<div class="card-list__text">
 							
-							<p>При микропротезировании мы заменяем утраченные ткани зуба керамической вкладкой, 
-								изготовленной по индивидуальному слепку.
+							<p>При микропротезировании мы заменяем утраченные ткани зуба не пломбой, 
+								а изготовленной по индивидуальному слепку керамической вкладкой.
 								Керамическая вкладка прочнее пломбы, она не стирается и не окрашевается. </p>
-								<p>Мы рекомендуем ставить вкладку на сильно разрушенные зубы и зубы рядом с коронкой, 
-								иногда коронка может деформировать пломбу и привести к вторичному кариесу.</p>
+								<p>Мы рекомендуем ставить вкладку на сильно разрушенные зубы и на зубы напротив коронки, 
+								   так как керамическая коронка может деформировать пломбу и привести к вторичному кариесу.</p>
 								<p>Вкладка бережет зуб и сохраняет его живым и крепким на десятки лет.</p>
 							</div>
 						</div>
@@ -326,7 +351,8 @@
 				<div class="restavration-section__text">
 					<p>Запущенный кариес приводит к воспалению нерва (пульпит) и воспалению тканей кости (периодонтит).
 					   Периодонтит приводит к убыли кости, возникновению кист и гранулем, и потере зуба.</p>
-					<p>Чем раньше врачи остоновят воспалительный процесс, тем больше вероятность сохранить зуб и уберечь себя от лишних медицинских процедур.</p>   
+					<p>Чем раньше врачи остоновят воспалительный процесс, тем больше вероятность сохранить зуб 
+					   и уберечь себя от лишних дорогих медицинских процедур.</p>   
 				</div>
 				<!--h4 class="header">
 					<div class="text-decor">
@@ -383,11 +409,9 @@
 								Лечение периодонтита и перелечивание зубов
 							</div>
 							<div class="card-list__text">
-							<p>Если пульпит лечили неправильно или оставили в каналах инфицированные ткани, 
-							инфекция выходит за пределы зуба в кость и у пациента начинается периодонтит.</p>
+							<p>Если пульпит лечили неправильно и оставили в каналах инфицированные ткани, 
+							   у пациента начинается периодонтит.</p>
 							
-							
-							<p>Но это еще не значит, что зуб надо удалять.</p>
 							<p>С помощью компьютерной томографии врач может найти источник проблемы,  распломбировать зуб под микроскопом, медикаментозно остановить 
 							распростронение инфекции и полностью излечить костный дефект.<p></div>
 						</div>
@@ -450,60 +474,77 @@
 					<li class="price-list__item">
 						<div class="price-list__header">
 							<div class="price-list__header-text">Лечение кариеса</div>
-							<div class="price-list__header-price">5900 - 7900 р.</div>
+							<div class="price-list__header-price">5900 - 8500</div>
 						</div>
-						<div class="price-list__text">В стоимость входит анестезия, установка коффердама, препарирование зуба с использованием микроскопа, 
-						восстановление анатомической формы и цвета зуба и гарантия от вторичного кариеса на 10 лет</div>
+						<div class="price-list__text">В стоимость входит анестезия, установка коффердама, 
+						препарирование зуба с использованием микроскопа, 
+						восстановление зуба и гарантия на 10 лет</div>
 					</li>
 					
 					<li class="price-list__item">
 						<div class="price-list__header">
-							<div class="price-list__header-text">Лечение кариеса с реставрацией передних зубов</div>
-							<div class="price-list__header-price">6900 - 10900 р.</div>
+							<div class="price-list__header-text">Востановление зуба при нескольких кариозных полостях</div>
+							<div class="price-list__header-price">8500 - 10900</div>
 						</div>
-						<div class="price-list__text">В стоимость входит анестезия, установка коффердама, препарирование зуба с использованием микроскопа, 
-						восстановление зуба композитным материалом Estelite</div>
+						<div class="price-list__text">В стоимость входит анестезия, установка коффердама, 
+														препарирование зуба с использованием микроскопа, 
+														восстановление зуба и гарантия на 10 лет</div>
 					</li>
 		
 					<div class="subheader">Микропротезирование</div>
 					<li class="price-list__item">
 						<div class="price-list__header">
-							<div class="price-list__header-text">Микропротезирование керамической вкладкой inlay/onlay</div>
-							<div class="price-list__header-price">35000 р.</div>
+							<div class="price-list__header-text">Микропротезирование керамической вкладкой E-max</div>
+							<div class="price-list__header-price">25000 - 28000</div>
 						</div>
-						<div class="price-list__text">В стоимость входят анестезия, установка коффердама, препарирование зуба с использованием микроскопа, 
-						снятие слепков, техническая работа, установка временной пломбы и фиксация вкладки.</div>
+						<div class="price-list__text">В стоимость входят анестезия, установка коффердама, 
+						препарирование зуба с использованием микроскопа, 
+						снятие слепков, установка временной пломбы, техническая работа и фиксация вкладки.</div>
 					</li>
 					
 					<div class="subheader">Лечение пульпита, периодонтита и кисты</div>
 					<li class="price-list__item">
 						<div class="price-list__header">
 							<div class="price-list__header-text">Лечение 1-корневого зуба</div>
-							<div class="price-list__header-price">36000 р.</div>
+							<div class="price-list__header-price">12000</div>
 						</div>
-						<div class="price-list__text">В стоимость входят ...</div>
+						<div class="price-list__text">В стоимость входят анестезия, установка коффердама, 
+						механическая и медикаментозная обработка каналов под микроскопом, 
+						и постоянное пломбирование каналов.</div>
 					</li>
 					
 					<li class="price-list__item">
 						<div class="price-list__header">
 							<div class="price-list__header-text">Лечение 2-корневого зуба</div>
-							<div class="price-list__header-price">36000 р.</div>
+							<div class="price-list__header-price">20000</div>
 						</div>
-						<div class="price-list__text">В стоимость входят ...</div>
+						<div class="price-list__text">В стоимость входят анестезия, установка коффердама, 
+						механическая и медикаментозная обработка каналов под микроскопом, 
+						и постоянное пломбирование каналов.</div>
 					</li>
 					<li class="price-list__item">
 						<div class="price-list__header">
 							<div class="price-list__header-text">Лечение 3-корневого зуба</div>
-							<div class="price-list__header-price">36000 р.</div>
+							<div class="price-list__header-price">25000 </div>
 						</div>
-						<div class="price-list__text">В стоимость входят ...</div>
+						<div class="price-list__text">В стоимость входят анестезия, установка коффердама, 
+						механическая и медикаментозная обработка каналов под микроскопом, 
+						и постоянное пломбирование каналов.</div>
+					</li>
+					
+					<li class="price-list__item">
+						<div class="price-list__header">
+							<div class="price-list__header-text">Временное пломбирование каналов</div>
+							<div class="price-list__header-price">2000</div>
+						</div>
+						<div class="price-list__text">Временное пломбирование гидроокисью кальция, 1 канал.</div>
 					</li>
 					
 					<div class="subheader">металлокерамические коронки</div>
 					<li class="price-list__item">
 						<div class="price-list__header">
 							<div class="price-list__header-text">Коронка металлокерамическая "Art"</div>
-							<div class="price-list__header-price">18000 р.</div>
+							<div class="price-list__header-price">18000</div>
 						</div>
 						<div class="price-list__text">В стоимость входит планирование, снятие слепков, анестезия, примерка предварительной модели, техническая работа (временные и
 						постоянные коронки), установка временных коронок, моделирование и коррекция десневого края, препарирование и фиксация
@@ -515,7 +556,7 @@
 					<li class="price-list__item">
 						<div class="price-list__header">
 							<div class="price-list__header-text">Коронка цельнокерамическая E-max "Classic"</div>
-							<div class="price-list__header-price">36000 р.</div>
+							<div class="price-list__header-price">36000</div>
 						</div>
 						<div class="price-list__text">В стоимость входит планирование, снятие слепков, анестезия, примерка предварительной модели, техническая работа (временные и
 						постоянные коронки), установка временных коронок, моделирование и коррекция десневого края, препарирование и фиксация
@@ -525,7 +566,7 @@
 					<li class="price-list__item">
 						<div class="price-list__header">
 							<div class="price-list__header-text">Коронка цельнокерамическая E-max "Art"</div>
-							<div class="price-list__header-price">49000 р.</div>
+							<div class="price-list__header-price">49000</div>
 						</div>
 						<div class="price-list__text">Коронка с самыми высокими художественными характеристиками. В стоимость входит планирование, снятие слепков, анестезия, примерка предварительной модели, техническая работа (временные и
 						постоянные коронки), установка временных коронок, моделирование и коррекция десневого края, препарирование и фиксация
@@ -535,7 +576,7 @@
 					<li class="price-list__item">
 						<div class="price-list__header">
 							<div class="price-list__header-text">Коронка из оксида циркония "Classic"</div>
-							<div class="price-list__header-price">36000 р.</div>
+							<div class="price-list__header-price">36000</div>
 						</div>
 						<div class="price-list__text">В стоимость входит планирование, снятие слепков, анестезия, примерка предварительной модели, техническая работа (временные и
 						постоянные коронки), установка временных коронок, моделирование и коррекция десневого края, препарирование и фиксация
@@ -545,12 +586,33 @@
 					<li class="price-list__item">
 						<div class="price-list__header">
 							<div class="price-list__header-text">Коронка из оксида циркония "Art"</div>
-							<div class="price-list__header-price">49000 р.</div>
+							<div class="price-list__header-price">49000</div>
 						</div>
 						<div class="price-list__text">Коронка с самыми высокими художественными характеристиками. В стоимость входит планирование, снятие слепков, анестезия, примерка предварительной модели, техническая работа (временные и
 						постоянные коронки), установка временных коронок, моделирование и коррекция десневого края, препарирование и фиксация
 						постоянной коронки.</div>
 					</li>
+					
+					
+					<div class="subheader">Гигиена полости рта</div>
+					
+					<li class="price-list__item">
+						<div class="price-list__header">
+							<div class="price-list__header-text">Профессиональная гигиена полости рта</div>
+							<div class="price-list__header-price">6500</div>
+						</div>
+					
+					</li>
+					
+					<li class="price-list__item">
+						<div class="price-list__header">
+							<div class="price-list__header-text">Профессиональная гигиена полости рта и имплантов</div>
+							<div class="price-list__header-price">8900</div>
+						</div>
+					
+					</li>
+					
+					
 					
 				</ul>
 		

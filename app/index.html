@@ -15,7 +15,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>Стоматология ЭСТА, м.Аэропорт</title>
+	<title>Стоматология ЭСТА, метро Аэропорт</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,6 +34,26 @@
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
+
+<!-- WhatsHelp.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+7(958)7091333", // WhatsApp number
+            telegram: "esta_clinic", // Telegram bot username
+            call_to_action: "", // Call to action
+            button_color: "#FF6550", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "whatsapp,telegram", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /WhatsHelp.io widget -->
+
 
 <body>
 
@@ -99,14 +119,14 @@
 							ЭКСПЕРТНАЯ СТОМАТОЛОГИЯ</h1>
 						<h2 class="main-section__subheader">Стоматологическая клиника<br>
 						под управлением врачей</h2>
-						<button href="#" class="main-section__anchor">
+						<!--button href="#" class="main-section__anchor">
 							Узнать больше
 							<span class="arrow-decor">
 								<span class="arrow-decor__arrow"></span>
 								<span class="arrow-decor__border"></span>
 								<span class="arrow-decor__border--hover"></span>
 							</span>
-						</button>
+						</button-->
 					</div>
 					<div class="main-section__right">
 						<div class="main-section__photo desktop">
@@ -120,7 +140,7 @@
 						</div>
 						<div class="main-section__info">
 							<a href="tel:+74997041333" class="main-section__phone">+7 (499) 704-13-33</a>
-							<div class="map-section__metro map-section__info-bottom-item">Аэропорт,</div>
+							<div class="map-section__metro map-section__info-bottom-item">метро Аэропорт</div>
 							<div class="main-section__adress">ул.Викторенко, д.4, к.1</div>
 						</div>
 					</div>
@@ -138,9 +158,9 @@
 					<div class="doc-section__info">
 						<div class="doc-section__text"> 
 						Все стоматологические клиники продают один продукт: лечение зубов.
-						Единственный путь оценить качество стоматологии - 
-						это записаться в клинику на бесплатную консультацию 
-						или на профессиональную гигиену и познакомиться с нашими врачами.
+						Единственный путь его оценить - 
+						это записаться в клинику на бесплатную консультацию, гигиену или лечение
+						и познакомиться с нашими врачами.
 						<!--a href="whatsapp://send?text=Hello World!&phone=+79159290506">Send Message</a-->
 						</div>
 						<div class="doc-section__name">к.м.н. Эйгин Леонид Ефимович,
@@ -171,11 +191,11 @@
 										<img class="trust-section-list__image trust-section-list__image--default" src="./img/icon2.png" alt="">
 										<img class="trust-section-list__image trust-section-list__image--inverted" src="./img/icon2-inv.png" alt="">
 									</div>
-									<div class="trust-section-list__heading-text">ВЫСОКИЕ СТАНДАРТЫ</div>
+									<div class="trust-section-list__heading-text">ВРАЧИ</div>
 								</div>
 								<div class="trust-section-list__text">
-								  Мы собрали лучших врачей и
-								  не ограничаваем их по времени лечения, инструментам и расходным материалам.
+								 У хорошего специалиста всегда есть выбор где работать. 
+								 Мы гордимся, что наши врачи выбрали нас.
 								</div>
 							</div>
 						</div>
@@ -187,11 +207,13 @@
 										<img class="trust-section-list__image trust-section-list__image--novraml" src="./img/icon2.png" alt="">
 										<img class="trust-section-list__image trust-section-list__image--inverted" src="./img/icon2-inv.png" alt="">
 									</div>
-									<div class="trust-section-list__heading-text">РАСШИРЕННАЯ ГАРАНТИЯ</div>
+									<div class="trust-section-list__heading-text">ГАРАНТИЯ</div>
 								</div>
-								<div class="trust-section-list__text">При <a href="./implantation.html">имплантации</a>, мы даем гарантию на приживаемость импланта на 10 лет.
-                                                                      А при <a href="./therapy.html">постановке пломб и вкладок</a> мы даем на 10 лет гарантию 
-																      от появления вторичного кариеса.
+								<div class="trust-section-list__text">
+								При <a href="./implantation.html">имплантации</a>, мы даем гарантию на приживаемость импланта на 10 лет.
+															Гарантия покрывает не только сам имплант, но и операцию имплантации, и установку коронки.
+                                                                      <br>А при <a href="./therapy.html">лечениии кариеса</a> мы даем на 10 лет гарантию 
+																      от выпадения пломбы и от появления вторичного кариеса.
 								</div>
 							</div>
 						</div>
@@ -203,12 +225,11 @@
 										<img class="trust-section-list__image trust-section-list__image--novraml" src="./img/icon2.png" alt="">
 										<img class="trust-section-list__image trust-section-list__image--inverted" src="./img/icon2-inv.png" alt="">
 									</div>
-									<div class="trust-section-list__heading-text">ЧЕСТНЫЕ ЦЕНЫ</div>
+									<div class="trust-section-list__heading-text">ЦЕНЫ</div>
 								</div>
 								<div class="trust-section-list__text">
 								Мы информируем пациента о возможных альтернативах, в том числе и более дешевых. 
 								После согласования плана лечения, стоимость не меняется.
-
 								</div>
 							</div>
 						</div>
@@ -733,7 +754,7 @@
 							<p>сб: 10:00 — 16:00</p>
 						</div>
 						<div class="map-section__info-bottom">
-							<div class="map-section__metro map-section__info-bottom-item">Аэропорт</div>
+							<div class="map-section__metro map-section__info-bottom-item">метро Аэропорт</div>
 							<div class="map-section__adress map-section__info-bottom-item">ул.Викторенко, д.4, к.1</div>
 							<a href="mailto:ask@esta-clinic.ru" class="map-section__email map-section__info-bottom-item">ask@esta-clinic.ru</a>
 						</div>

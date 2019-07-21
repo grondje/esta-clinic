@@ -34,6 +34,29 @@
 
 </head>
 
+
+
+<!-- WhatsHelp.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+7(958)7091333", // WhatsApp number
+            telegram: "esta_clinic", // Telegram bot username
+            call_to_action: "", // Call to action
+            button_color: "#FF6550", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "whatsapp,telegram", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /WhatsHelp.io widget -->
+
+
+
 <body>
 
   <!-- Custom HTML -->
@@ -186,14 +209,13 @@
             <div class="text-decor__line"></div>
             <div class="text-decor__circle"></div>
           </div>
-          Имплантации и тотальные работы любой сложности
+          Имплантации и тотальные работы
           <div class="text-decor text-decor--inverted">
             <div class="text-decor__line"></div>
             <div class="text-decor__circle"></div>
           </div>
         </h3>
-        <div class="care-section__text">Подберём оптимальное решение, проведём лечение без боли и осложнений, позаботимся о
-        надёжности, здоровье и эстетике ваших зубов.</div>
+        <div class="care-section__text">Подберём оптимальное решение и проведём лечение без боли и осложнений.</div>
       </div>
     </section>
 
@@ -216,8 +238,7 @@
 			хирурга-имплантолога и стоматолога-ортопеда.</div>
             <div class="safe-implant-list__card"><span class="safe-implant-list__card-content">В экспертной клинике ESTA 
 			имплантацию ведут <span class="bold">два кандидата медицинских наук</span>, работающие вместе уже больше 15-ти лет. 
-			Каждый из них - врач с преподавательским опытом и за их 
-			плечами тысячи успешных имплантаций.</span></div>
+			Каждый из них - врач с преподавательским опытом, и вместе они провели тысячи успешных имплантаций.</span></div>
           </li>
           <li class="safe-implant-list__item">
             <div class="safe-implant-list__header">
@@ -232,8 +253,8 @@
                 Гарантия результата
               </div>
             </div>
-            <div class="safe-implant-list__text">Многие клиники предоставляют гарантию только на сами импланты, которую им предоставляет
-            производитель.</div>
+            <div class="safe-implant-list__text">Большинство клиник предоставляют гарантию 
+			<span class="bold">только на сами импланты</span>, которую им предоставляет производитель.</div>
             <div class="safe-implant-list__card"><span class="safe-implant-list__card-content">В экспертной клинике ESTA 
 		    на каждую
             имплантацию мы даём расширенную гарантию сроком до <span class="bold">10 лет</span>.
@@ -273,7 +294,7 @@
                 диагностика и планирование
               </div>
               <div class="card-list__text">
-			  <p>Планированием операции в клиние ЭСТА всегда занимаются два опытных врача, ортопед и хирург. 
+			  <p>Планированием операции в клиние ЭСТА занимаются два опытных врача, ортопед и хирург. 
 			  Они проводят диагностику кости, десны, прикуса и лицевых параметров.</p>
                 <p>После диагностики, доктора предложат вам разные варианты лечения, и объяснят преимущества и
 					недостатки каждого варианта.</p>
@@ -303,11 +324,12 @@
 					Имплантация
 				  </div>
 				  <div class="card-list__text">
-				  <p>После определения плана лечения, вас запишут на операцию.</p><p>Анестезиолог позаботиться о вашем сне, а 
-					   хирург проведет имплантацию. После операции ортопед поставит вам временные коронки.</p>
-					<p>Лучшие зуботехнические лаборатории изготовят для вас удобные постоянные
-					   конструкции, а ортопед установит их на импланты.</p>
-					
+				  <p>После определения плана лечения, вас запишут на операцию.</p>
+				  <p>Анестезиолог позаботиться о вашем сне, а 
+					   хирург в это время проведет имплантацию. 
+					   После операции ортопед поставит вам временные коронки.</p>
+					<p>Когда импланты приживутся, лучшие зуботехнические лаборатории изготовят постоянные
+					   конструкции, и ортопед установит их на импланты.</p>  
                   </div>
 
               </div>
@@ -319,7 +341,7 @@
             <div class="card-list__img-container">
               <div class="card-list__img">
                 <img data-top="transform: translateY(-30px)" data-bottom-center="transform: translateY(30px)"
-                  src="./img/implant/card1.jpg" alt="">
+                  src="./img/implant/implacare.jpg" alt="">
               </div>
             </div>
             <div class="card-list__content">
@@ -328,19 +350,17 @@
                   <div class="text-decor__line"></div>
                   <div class="text-decor__circle"></div>
                 </div>
-                Бережное отношение 
+                Уход за имплантами 
               </div>
 			  
 			   <div class="card-list__text">
 			    
-						<p>Дискомфорт пациентов часто связан с психологическими факторами.</p>
-						<p>Благодаря коммуникабельности и деликатности наших врачей, любая 
-						операция пройдёт без лишнего стресса.</p>
-		
-
+						<p>Для ухода за имплантами достаточно приходить на профессиональную гигиену каждые 6 месяцев.</p>
+						 <p>При помощи ультразвука, порошка Clean Pro и специального инструмента Implacare, 
+						 гигиенист очистит ваши импланты и коронки не разбирая системы.</p>
 			  </div>
 			  <button href="#" class="card-list__anchor2">
-					Записаться на консультацию по имплантации
+					Записаться на консультацию
 					<span class="arrow-decor">
 						<span class="arrow-decor__arrow"></span>
 						<span class="arrow-decor__border"></span>
@@ -356,9 +376,6 @@
         </ul>
 
 		<div class="implant-install-section__text">
-		<p><span class="bold"></span></p> 
-					<p>При выборе клиники для проведения имплантации, важно учесть: 
-					долговечная имплантация зависит, в первую очередь, от умения хирурга, а не от производителя имплантатов.</p>
 	</div>
 
       </div>
@@ -413,8 +430,8 @@
                 Удаление с помощью ультразвука
               </div>
               <div class="card-list__text">
-				<p>Самое главное при удалении - это опыт хирурга. 
-				   Удаление в клинике проводят лучшие челюстно-лицевые хирурги,
+				<p>
+				   Удаление в клинике проводят челюстно-лицевые хирурги,
 				   используя самое современное оборудование - ультразвуковой пьезоскальпель.</p>  
 				   <p>Действие пьезоскальпеля основано на ультразвуковых волнах: они разрушают твердые ткани зуба, не затрагивая 
 				   мягкие ткани десны. Это позволяет безболезненно удалять зубы и корни любой сложности. Особенно это помогает
@@ -480,7 +497,7 @@
 			В состав препаратов анестезиолога также входит 
 			<span class="bold">противовоспалительный комплекс</span>,
 								который снимает отечность и ускоряет заживлениe.</p> 
-            <p>Поэтому мы особенно рекомендуем седацию при удалении ретинированных зубов и в комплексных работах.</p>
+            <p>Поэтому мы рекомендуем седацию при удалении ретинированных зубов и в комплексных работах.</p>
 			
 		  </div>
         </div>
@@ -564,7 +581,7 @@
           <li class="price-list__item">
             <div class="price-list__header">
               <div class="price-list__header-text">Имплантация системы Osstem</div>
-              <div class="price-list__header-price">45 000 р.</div>
+              <div class="price-list__header-price">45000</div>
             </div>
 			<div class="price-list__text">С гарантией на 10 лет.</div>
           </li>
@@ -572,7 +589,7 @@
           <li class="price-list__item">
             <div class="price-list__header">
               <div class="price-list__header-text">Имплантация системы Osstem с металлокерамической коронкой "под ключ"</div>
-              <div class="price-list__header-price">от 69 000 р.</div>
+              <div class="price-list__header-price">от 69000</div>
             </div>
 			<div class="price-list__text">С гарантией на 10 лет.</div>
           </li>
@@ -580,7 +597,7 @@
           <li class="price-list__item">
             <div class="price-list__header">
               <div class="price-list__header-text">Имплантация системы Osstem с цельнокерамической коронкой E-MAX "под ключ"</div>
-              <div class="price-list__header-price">от 89 000 р.</div>
+              <div class="price-list__header-price">от 89000</div>
             </div>
 			<div class="price-list__text">С гарантией на 10 лет.</div>
           </li>
@@ -588,7 +605,7 @@
           <li class="price-list__item">
             <div class="price-list__header">
               <div class="price-list__header-text">Имплантация системы Osstem с коронкой из диоксида циркония "под ключ"</div>
-              <div class="price-list__header-price">от 89 000 р.</div>
+              <div class="price-list__header-price">от 89000</div>
             </div>
 			<div class="price-list__text">С гарантией на 10 лет.</div>
           </li>
@@ -597,7 +614,7 @@
           <li class="price-list__item">
             <div class="price-list__header">
               <div class="price-list__header-text">Имплантация системы Astra Tech</div>
-              <div class="price-list__header-price">63 000 р.</div>
+              <div class="price-list__header-price">63000</div>
             </div>
 			<div class="price-list__text">С гарантией на 10 лет.</div>
           </li>
@@ -605,7 +622,7 @@
           <li class="price-list__item">
             <div class="price-list__header">
               <div class="price-list__header-text">Имплантация системы Astra Тech с металлокерамической коронкой "под ключ"</div>
-              <div class="price-list__header-price">от 89 000 р.</div>
+              <div class="price-list__header-price">от 89000</div>
             </div>
 			<div class="price-list__text">С гарантией на 10 лет.</div>
 		</li>
@@ -613,7 +630,7 @@
           <li class="price-list__item">
             <div class="price-list__header">
               <div class="price-list__header-text">Имплантация системы Astra Тech с цельнокерамической коронкой E-MAX "под ключ"</div>
-              <div class="price-list__header-price">от 111 000 р.</div>
+              <div class="price-list__header-price">от 111000</div>
             </div>
 			<div class="price-list__text">С гарантией на 10 лет.</div>
           </li>
@@ -621,7 +638,7 @@
           <li class="price-list__item">
             <div class="price-list__header">
               <div class="price-list__header-text">Имплантация системы Astra Тech с коронкой из диоксида циркония "под ключ"</div>
-              <div class="price-list__header-price">от 111 000 р.</div>
+              <div class="price-list__header-price">от 111000</div>
             </div>
 			<div class="price-list__text">С гарантией на 10 лет.</div>
           </li>
@@ -631,7 +648,7 @@
 		  <li class="price-list__item">
             <div class="price-list__header">
               <div class="price-list__header-text">Удаление зуба простое</div>
-              <div class="price-list__header-price">3 500 р.</div>
+              <div class="price-list__header-price">3500</div>
             </div>
             <div class="price-list__text"></div>
           </li>
@@ -639,7 +656,7 @@
 		  <li class="price-list__item">
             <div class="price-list__header">
               <div class="price-list__header-text">Удаление зуба средней сложности</div>
-              <div class="price-list__header-price">5 400 р.</div>
+              <div class="price-list__header-price">5400</div>
             </div>
             <div class="price-list__text"></div>
           </li>
@@ -647,7 +664,7 @@
 		  <li class="price-list__item">
             <div class="price-list__header">
               <div class="price-list__header-text">Удаление зуба мудрости</div>
-              <div class="price-list__header-price">7 200 р.</div>
+              <div class="price-list__header-price">7200</div>
             </div>
             <div class="price-list__text"></div>
           </li>
@@ -655,7 +672,7 @@
 		  <li class="price-list__item">
             <div class="price-list__header">
               <div class="price-list__header-text">Удаление ретинированого зуба</div>
-              <div class="price-list__header-price"><span class="crossed">14 900 р.</span> <span class="estaorange">11 500 р.</span></div>
+              <div class="price-list__header-price"><span class="crossed">14900</span> <span class="estaorange">11500</span></div>
             </div>
             <div class="price-list__text"></div>
           </li>
@@ -663,7 +680,7 @@
           <li class="price-list__item">
             <div class="price-list__header">
               <div class="price-list__header-text">Удаление 4-x зубов мудрости с "во сне"</div>
-              <div class="price-list__header-price"><span class="crossed">86 600 р.</span> <span class="estaorange">69 000 р.</span></div>
+              <div class="price-list__header-price"><span class="crossed">86600</span> <span class="estaorange">69000</span></div>
             </div>
             <div class="price-list__text">Цена включает удаление 4-х ретинированых зубов мудрости и 2 часа седации.</div>
           </li>
@@ -673,10 +690,17 @@
           <li class="price-list__item">
             <div class="price-list__header">
               <div class="price-list__header-text">Стоматологическая седация с противовоспалительным комплексом, 1 час</div>
-              <div class="price-list__header-price">11 500 р.</div>
+              <div class="price-list__header-price">11500</div>
             </div>
           </li>
 		  
+		  <div class="subheader">УХОД ЗА ИМПЛАНТАМИ</div>
+		  <li class="price-list__item">
+			<div class="price-list__header">
+				<div class="price-list__header-text">Профессиональная гигиена полости рта и имплантов</div>
+				<div class="price-list__header-price">8900</div>
+			</div>
+		</li>
         </ul>	  
 	  </div>
     </section>

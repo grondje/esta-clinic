@@ -228,12 +228,12 @@ $(function() {
 	const navigationInit = () => {
 		const headerElement = document.querySelector('.page-header');
 
-		const firstLink = document.querySelector('.main-section__anchor');
+		/*const firstLink = document.querySelector('.main-section__anchor');
 
 		firstLink.addEventListener('click', e => {
 			const anchorOffset = document.querySelector('.trust-section').offsetTop - headerElement.offsetHeight;
 			$("html, body").animate({ scrollTop: anchorOffset }, 666);
-		})
+		})*/
 	}
 
 	const headerMenuInit = () => {
