@@ -187,7 +187,7 @@ $(function () {
         setTimeout(() => {
           currentTarget.classList.remove('open');
           menuList.classList.remove('active');
-        }, 3000);
+        }, 5000);
       } else {
         clearTimeout(timeout);
       }
