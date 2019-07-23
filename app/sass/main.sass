@@ -50,8 +50,9 @@ body
 	text-decoration: line-through
 
 .header
-	font-weight: 800
-	font-size: 48px
+	font-weight: 200
+	font-size: 44px
+	z-index: 100
 
 .bold
 	font-weight: 700
@@ -86,6 +87,7 @@ body
 	&__left
 		width: 450px
 		flex-grow: 1
+		margin-right: 40px;
 	&__right
 		margin-right: -160px
 	&__photo
@@ -112,6 +114,7 @@ body
 		margin-bottom: 30px
 		position: relative
 		padding-right: 40px
+		font-size: 50px
 	&__subheader
 		font-size: 25px
 		font-weight: 300
@@ -623,14 +626,14 @@ body
 	&--inverted &__circle
 		order: -1
 	&__line
-		width: 70px
-		height: 1px
-		background-color: $main
+		//width: 70px
+		//height: 1px
+		//background-color: $main
 	&__circle
-		width: 10px
-		height: 10px
-		border-radius: 50%
-		border: 1px solid $main
+		//width: 10px
+		//height: 10px
+		//border-radius: 50%
+		//border: 1px solid $main
 
 .doc-popup
 	background-color: $clear
@@ -779,11 +782,13 @@ body
 			margin-bottom: 20px
 			position: relative
 			z-index: 2
+			color: #51aaae
 		&__subheader
 			font-size: 44px
-			font-weight: 700
+			font-weight: 200
 			margin-bottom: 70px
-			color: $blue
+			//color: $blue
+			color: #51aaae
 			&:hover
 				text-decoration: none
 		&__left
@@ -853,7 +858,7 @@ body
 			position: relative
 			padding-top: 25px
 		&__header
-			font-size: 64px
+			font-size: 54px
 			margin-top: 64px
 			margin-bottom: 20px
 			position: relative
@@ -861,7 +866,7 @@ body
 			z-index: 2
 		&__subheader
 			font-size: 44px
-			font-weight: 700
+			font-weight: 200
 			margin-bottom: 70px
 			color: #5f8dab
 			&:hover
@@ -869,14 +874,15 @@ body
 		&__left
 			width: auto
 			padding-bottom: 40px
+			margin-right: 30px
 		&__right
 			align-self: flex-end
-			margin-right: -120px
+			margin-right: -20px
 			margin-top: -100px
 			pointer-events: none
 			.girl_decor
-				width: 723px
-				height: 556px
+				width: 495px
+				height: 442px
 				background: url(../img/therapy/girl.png) no-repeat center
 		.text-decor
 			top: 34px
@@ -907,6 +913,7 @@ body
 		padding: 0 80px
 		text-align: center
 		margin-bottom: 30px
+		header: 44px
 		.text-decor
 			left: -5px
 			top: 27px
@@ -1011,7 +1018,7 @@ body
 		margin-top: 60px
 		margin-bottom: 25px
 		font-size: 28px
-		font-weight: 700;
+		font-weight: 200;
 		color: #45c4c9
 	.price-list
 		margin: 0
@@ -1019,6 +1026,7 @@ body
 		list-style: none
 		margin-top: -20px
 		margin-bottom: 40px
+		font-weight: 200
 		&__item
 			padding: 20px
 			background-color: #e3e3e3
@@ -1026,7 +1034,7 @@ body
 		&__header
 			display: flex
 			font-size: 19px
-			font-weight: 700
+			font-weight: 400
 			text-transform: uppercase
 			margin-bottom: 5px
 			&-price
@@ -1034,6 +1042,7 @@ body
 				flex-shrink: 0
 			&-text
 				margin-right: 15px
+				
 
 .price-section,
 	&__decor2
@@ -1538,13 +1547,13 @@ body
 				&__link
 					&:hover
 						&::before
-							background-color: #5c4d88
+							background-color: #8b7abc
 						&::after
 							width: 25px
 					&::after
-						background-color: #5c4d88
+						background-color: #8b7abc
 					&:hover
-						color: #5c4d88
+						color: #8b7abc
 	.full-doc-section .container
 		padding-bottom: 60px
 	.form 
@@ -1570,9 +1579,9 @@ body
 			position: relative
 			z-index: 2
 			text-transform: uppercase
-			color: #5c4d88
+			color: #8671c0
 		&__subheader
-			color: #5c4d88
+			color: #8671c0
 		.text-decor
 			top: 24px
 	.care-section, .care-section2
