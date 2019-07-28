@@ -50,12 +50,13 @@ body
 	text-decoration: line-through
 
 .header
-	font-weight: 600
+	font-weight: 800
+	color: #505050
 	font-size: 47px
 	z-index: 100
 
 .bold
-	font-weight: 700
+	font-weight: 800
 
 .arrow-decor
 	position: relative
@@ -79,6 +80,11 @@ body
 		bottom: 0
 		background: url(../img/arrow_border.png)
 
+.main-page
+	.main-section
+		&__left
+			margin-right: 60px;
+	
 .main-section
 	.container
 		padding-bottom: 60px
@@ -87,7 +93,7 @@ body
 	&__left
 		width: 450px
 		flex-grow: 1
-		margin-right: 60px;
+		margin-right: 2px;
 	&__right
 		margin-right: -160px
 	&__photo
@@ -114,9 +120,10 @@ body
 		margin-bottom: 30px
 		position: relative
 		padding-right: 40px
-		font-size: 50px
+		font-size: 54px
 	&__subheader
-		font-size: 25px
+		font-size: 30px
+		padding-right: 80px;
 		font-weight: 300
 		&:hover
 			text-decoration: none
@@ -154,8 +161,12 @@ body
 		.arrow-decor
 			margin-left: 10px
 	.text-decor
-		top: 24px
+		top: 26px
 		transform: translateY(0)
+		&__line
+			background-color: #0fb0b6
+		&__circle
+			border-color: #0fb0b6
 	//&__decor4
 	//	position: absolute
 	//	width: 592px
@@ -228,12 +239,12 @@ body
 	&__header
 		margin-bottom: 76px
 		position: relative
-		font-size: 57px
+		//font-size: 57px
 	&__container
 		display: flex
 	&__photo
 		margin-right: -165px
-		top: -70px;
+		top: -30px;
 		position: relative
 		> img
 			clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
@@ -356,7 +367,7 @@ body
 			margin-top: 70px
 		&__header
 			font-size: 24px
-			font-weight: 400
+			font-weight: 700
 			color: $blue
 			margin-bottom: 10px
 			text-transform: uppercase
@@ -365,10 +376,17 @@ body
 	&__decor1
 		position: absolute
 		width: 592px
-		height: 719px
+		height: 619px
 		background: url(../img/micro.png) no-repeat center
 		top: -79px
 		left: -444px
+	&__decor3
+		position: absolute
+		width: 592px
+		height: 719px
+		background: url(../img/zubik.png) no-repeat center
+		top: 79px
+		right: -364px
 	&__decor2
 		position: absolute
 		width: 481px
@@ -389,7 +407,7 @@ body
 		position: relative
 	&__subheader
 		text-align: center
-		font-weight: 300
+		//font-weight: 300
 		margin-bottom: 30px
 	&-input
 		height: 70px
@@ -575,8 +593,8 @@ body
 	&__info-bottom-item + &__info-bottom-item
 		margin-top: 10px
 	&__metro
-		//padding-left: 30px
-		//background: url(../img/icon_metro.png) no-repeat left 0 center
+		padding-left: 30px
+		background: url(../img/icon_metro.png) no-repeat left 0 center
 	&__adress
 		padding-left: 30px
 		background: url(../img/icon_geo.png) no-repeat left 0 center
@@ -645,14 +663,14 @@ body
 	&--inverted &__circle
 		order: -1
 	&__line
-		//width: 70px
-		//height: 1px
-		//background-color: $main
+		width: 70px
+		height: 1px
+		background-color: $main
 	&__circle
-		//width: 10px
-		//height: 10px
-		//border-radius: 50%
-		//border: 1px solid $main
+		width: 10px
+		height: 10px
+		border-radius: 50%
+		border: 1px solid $main
 
 .doc-popup
 	background-color: $clear
@@ -728,7 +746,7 @@ body
 			align-items: center
 			color: $main
 			transition: 0.15s color linear
-			font-size: 18px
+			font-size: 20px
 			&:hover,
 			&:focus,
 			&.active
@@ -801,13 +819,13 @@ body
 			margin-bottom: 20px
 			position: relative
 			z-index: 2
-			color: #51aaae
+			color: #00bbc2
 		&__subheader
 			font-size: 44px
-			font-weight: 200
+			font-weight: 600
 			margin-bottom: 70px
 			//color: $blue
-			color: #51aaae
+			color: #00bbc2
 			&:hover
 				text-decoration: none
 		&__left
@@ -824,6 +842,10 @@ body
 				background: url(../img/estet/girl.png) no-repeat center
 		.text-decor
 			top: 34px
+			&__line
+				background-color: #0fb0b6
+			&__circle
+				border-color: #0fb0b6
 		.esta__decor,
 		.esta__decor2
 			font-size: 252px
@@ -865,13 +887,13 @@ body
 				&__link
 					&:hover
 						&::before
-							background-color: #5f8dab
+							background-color: #368fc8
 						&::after
 							width: 25px
 					&::after
-						background-color: #5f8dab
+						background-color: #368fc8
 					&:hover
-						color: #5f8dab
+						color: #368fc8
 		.container
 			padding-bottom: 0
 			position: relative
@@ -881,13 +903,13 @@ body
 			margin-top: 64px
 			margin-bottom: 20px
 			position: relative
-			color: #5f8dab
+			color: #368fc8
 			z-index: 2
 		&__subheader
 			font-size: 44px
-			font-weight: 200
+			font-weight: 600
 			margin-bottom: 70px
-			color: #5f8dab
+			color: #368fc8
 			&:hover
 				text-decoration: none
 		&__left
@@ -904,7 +926,11 @@ body
 				height: 506px
 				background: url(../img/therapy/girl7.png) no-repeat center
 		.text-decor
-			top: 34px
+			top: 28px
+			&__line
+				background-color: #368fc8
+			&__circle
+				border-color: #368fc8
 		.esta__decor,
 		.esta__decor2
 			font-size: 252px
@@ -1077,6 +1103,7 @@ body
 .cons-section
 	background-color: #fcfcfc
 
+.restavration-section
 .vinir-install-section,
 .removal-section,
 .implant-install-section
@@ -1097,10 +1124,10 @@ body
 		position: relative
 		text-transform: uppercase
 		.text-decor
-			top: 21px
+			top: 26px
 
 .vinir-install-section
-	background-color: #f2f2f2
+	background-color: #fbfbfb
 
 .therapy-page .vinir-install-section__decor
 		top: 380px
@@ -1208,7 +1235,7 @@ body
 		margin-bottom: 30px
 	&__text
 		line-height: 1.3
-		text-align: left
+		//text-align: left
 	&__caption
 		font-weight: 300
 		position: absolute
@@ -1592,31 +1619,43 @@ body
 				width: 558px
 				height: 607px
 		&__header
-			font-size: 60px
+			font-size: 46px
 			margin-top: 64px
 			margin-bottom: 20px
 			position: relative
 			z-index: 2
 			text-transform: uppercase
-			color: #8671c0
+			color: #5c4d88
 		&__subheader
-			color: #8671c0
+			color: #5c4d88
 		.text-decor
 			top: 24px
-	.care-section, .care-section2
+			&__line
+				background-color: #5c4d88
+			&__circle
+				border-color: #5c4d88
+	.care-section
 		.header
 			padding: 0
 			.text-decor
-				left: -94px
+				left: -44px
 				&--inverted
-					right: -94px
+					right: -44px
+					left: inherit
+	.care-section2
+		.header
+			padding: 0
+			.text-decor
+				left: 44px
+				&--inverted
+					right: 44px
 					left: inherit
 	.card-list__content
 			padding-top: 20px
 			padding-right: 20px
 	.card-list__item:nth-child(2n+2) .card-list__content
 		padding-right: 40px
-		text-align: left
+		//text-align: left
 	.safe-implant-section
 		background-color: #efefef
 		.container
@@ -1669,7 +1708,7 @@ body
 		font-size: 24px
 		color: $clear
 		text-transform: uppercase
-		font-weight: 700
+		font-weight: 800
 		padding: 12px 12px 12px 55px
 		.text-decor
 			left: -30px
@@ -1701,7 +1740,7 @@ body
 			line-height: 1
 			bottom: 0px
 			right: -30px
-			font-weight: 700
+			font-weight: 800
 			color: #db8e55
 			opacity: 0.7
 	&__card-content
@@ -1736,7 +1775,7 @@ body
 		&__text
 			text-transform: uppercase
 			color: $blue	
-			font-weight: 700
+			font-weight: 800
 			margin-left: 10px
 	&__decor
 		width: 867px
@@ -1788,10 +1827,10 @@ body
 			flex-shrink: 0
 			margin-right: 20px
 		&__text
-			font-weight: 700
+			font-weight: 800
 		&__header
 			margin-top: 15px
-			font-weight: 700
+			font-weight: 800
 			margin-bottom: 5px
 	&-list-text
 		list-style: none
@@ -1819,7 +1858,7 @@ body
 	&__price
 		display: inline-flex
 		color: $clear
-		font-weight: 700
+		font-weight: 800
 		padding: 15px
 		background-color: $blue
 		left: 0
@@ -1833,7 +1872,7 @@ body
 	&__text
 		text-align: center
 		font-size: 22px
-		font-weight: 700
+		font-weight: 800
 
 .burger
 	.burger-list__link
