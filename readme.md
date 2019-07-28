@@ -4,6 +4,15 @@
 	<li>Run the template: <strong>gulp</strong>.</li>
 </ol>
 
+For apple users, downgrade to older npm:
+    sudo npm install -g n
+    sudo n 10.16.0
+    npm install
+    npm rebuild node-sass
+    node -v
+    gulp
+
+
 <h2>Gulp tasks:</h2>
 
 <ul>
