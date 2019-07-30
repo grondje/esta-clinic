@@ -92,7 +92,7 @@ body
 	&__left
 		width: 450px
 		flex-grow: 1
-		margin-right: 2px;
+		margin-right: 2px
 	&__right
 		margin-right: -160px
 	&__photo
@@ -122,7 +122,7 @@ body
 		font-size: 54px
 	&__subheader
 		font-size: 30px
-		padding-right: 80px;
+		padding-right: 80px
 		font-weight: 300
 		&:hover
 			text-decoration: none
@@ -223,11 +223,11 @@ body
 		padding-top: 110px
 		margin-top: 10px
 		.sveta__name
-			text-align: right;
-			font-size: 20px;
-			font-weight: 700;
-			position: relative;
-			top: -140px;
+			text-align: right
+			font-size: 20px
+			font-weight: 700
+			position: relative
+			top: -140px
 			margin-left: 20px
 			color: #fff
 		.sveta__prof
@@ -243,7 +243,7 @@ body
 		display: flex
 	&__photo
 		margin-right: -165px
-		top: -30px;
+		top: -30px
 		position: relative
 		> img
 			clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
@@ -1770,7 +1770,7 @@ body
 	.implant-install-section__text
 		margin-top: 80px
 		padding: 0 40px
-		text-align: center;
+		text-align: center
 	.resume-section
 		.container
 			padding-bottom: 0
@@ -2126,5 +2126,102 @@ body
 .card-list__text .burger-list__link
 	color: #45c4c9
 	margin-left: -20px
+
+
+.action-remove
+	background-color: #cfc7e4
+	padding: 16px
+	position: relative
+	margin-top: 160px
+	&__header
+		margin-bottom: 20px
+	&__container
+		border: 1px solid $clear
+		padding: 30px
+	&__sticker
+		width: 184px
+		height: 185px
+		background: url(../img/implant/label.png) no-repeat center
+		position: absolute
+		left: -50px
+		top: -50px
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+	&__sticker-price--old
+		font-size: 22px
+		font-weight: 700
+	&__sticker-price--new
+		font-size: 36px
+		font-weight: 700
+		color: #635882
+		margin-top: -5px
+	&__label
+		background-color: #7bc5c8
+		font-size: 24px
+		color: $clear
+		font-weight: 700
+		padding: 15px 40px 15px 105px
+		display: inline-flex
+		text-transform: uppercase
+		margin-bottom: 40px
+	&__header
+		text-align: center
+	&-list
+		margin: 0
+		padding: 0
+		list-style: none
+		margin-bottom: 40px
+		&__item
+			display: flex
+			align-items: center
+		&__item + &__item
+			margin-top: 15px
+		&__text
+			font-size: 18px
+			font-weight: 700
+			margin-left: 16px
+	&__content
+		display: flex
+		margin-bottom: 50px
+	&-banner
+		padding: 30px 40px
+		background-color: #635882
+		color: $clear
+		margin-left: -60px
+		display: flex
+		align-items: center
+		&__sign
+			font-size: 90px
+			margin-right: 10px
+			line-height: 75px
+		&__text
+			line-height: 1.4
+			font-weight: 300
+	&-text
+		margin-right: 40px
+	&-image
+		flex-shrink: 0
+	&__phone
+		font-size: 24px
+		font-weight: 300
+		margin-top: 30px
+		text-align: center
+	&-form
+		.form__container
+			padding: 0
+			border: none
+		.form__subheader
+			font-weight: 700
+			font-size: 24px
+			color: #635882
+		.form-input
+			width: 275px
+		.form__submit
+			margin-left: 45px
+			color: #635882
+			.arrow-decor__border
+				background: url(../img/implant/border_img_white.png) no-repeat center
 
 @import "media" // Always at the end
