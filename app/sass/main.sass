@@ -18,6 +18,9 @@ svg
 .blue
 	color: $blue
 
+.estayellow
+	color: #fdff83
+
 .estaorange
 	color: $estaorange
 
@@ -749,7 +752,7 @@ body
 			align-items: center
 			color: $main
 			transition: 0.15s color linear
-			font-size: 20px
+			font-size: 17px
 			&:hover,
 			&:focus,
 			&.active
@@ -862,6 +865,13 @@ body
 	.esta__decor,
 	.esta__decor2
 		color: #dedbf0
+
+
+
+.kids-page .main-section .container
+	.esta__decor,
+	.esta__decor2
+		color: #fbf9b2
 
 
 .main-page
@@ -1765,6 +1775,8 @@ body
 		.container
 			padding-bottom: 0
 
+
+
 .safe-implant-list
 	display: flex
 	list-style: none
@@ -1829,6 +1841,11 @@ body
 	&__card-content
 		position: relative
 		z-index: 2
+
+
+.kids-page
+	.safe-implant-list__header-content
+		background-color: #f07d42
 
 .sedation-section
 	background-color: #efefef
@@ -1956,6 +1973,146 @@ body
 		text-align: center
 		font-size: 22px
 		font-weight: 800
+
+.kids-page
+	.full-doc-section 
+		.header.main-header
+			padding-top: 50px
+	.main-section__slogan
+		font-size: 25px
+		font-weight: 200
+		margin-bottom: 70px
+		color: #f07d42
+	.full-doc-section
+		background-color: #fff
+	.card-list__img::before
+		//background-color: #fcf983
+	.care-section
+		background-color: #ffffff
+	.container
+    	//padding-bottom: 0px;
+	.page-header-menu
+		background-color: #f07d42
+	.main-section
+		background: url(../img/implant/impck.jpg) no-repeat center
+		background-size: cover
+		background-color: #fdff83
+		.burger
+			&-list
+				&__link
+					color: #f07d42
+					&:hover
+						&::before
+							background-color: #f07d42
+						&::after
+							width: 25px
+					&::after
+						background-color: #f07d42
+					&:hover
+						color: #f07d42
+	.full-doc-section .container
+		padding-bottom: 60px
+	.form 
+		.header.header.header
+			font-size: 33px
+			margin-left: 0
+		.text-decor
+			left: 30px
+			&--inverted
+				right: 30px
+				left: inherit
+	.main-section
+		&__right 
+			margin-right: 10px
+			.girl_decor
+				background: url(../img/kids/kid.png) no-repeat center
+				width: 458px
+				height: 362px
+		&__header
+			font-size: 56px
+			margin-top: 64px
+			margin-bottom: 20px
+			position: relative
+			z-index: 2
+			text-transform: uppercase
+			color: #f07d42
+		&__subheader
+			color: #f07d42
+		.text-decor
+			top: 24px
+			&__line
+				background-color: #f07d42
+			&__circle
+				border-color: #f07d42
+	.care-section2, .removal-section
+		background-color: #ffffff
+	.care-section
+		.header
+			padding: 0
+			.text-decor
+				left: -44px
+				&--inverted
+					right: -44px
+					left: inherit
+	.care-section2
+		.header
+			padding: 0
+			.text-decor
+				left: 44px
+				&--inverted
+					right: 44px
+					left: inherit
+	.footbal__decor
+			width: 867px
+			height: 612px
+			pointer-events: none
+			z-index: 1
+			background: url(../img/kids/football.png) no-repeat center
+			position: absolute
+			top: 1260px
+			left: -530px
+	.portal__decor
+			width: 867px
+			height: 612px
+			pointer-events: none
+			z-index: 10000
+			background: url(../img/kids/portal.png) no-repeat center
+			position: absolute
+			top: 2100px
+			right: -163px
+
+	.card-list__content
+			padding-top: 20px
+			padding-right: 20px
+	.card-list__item:nth-child(2n+2) .card-list__content
+		padding-right: 40px
+		//text-align: left
+	.safe-implant-section
+		background-color: #f5f5f5
+		.container
+			padding-bottom: 30px
+		.safe-implant-list
+			transform: translateY(-40px)
+	.price-section
+		background-color: #f9f9f9
+		.header
+			text-align: center;
+			padding-top: 0px
+		.price-list__item
+			background-color: #ffffff
+	.implant-install-section__decor
+		width: 499px
+		height: 492px
+		background: url(../img/implant/decor2.png) no-repeat center
+		top: 660px
+	.implant-install-section__text
+		margin-top: 80px
+		padding: 0 40px
+		text-align: center;
+	.resume-section
+		.container
+			padding-bottom: 0
+
 
 .burger
 	.burger-list__link
