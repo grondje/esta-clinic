@@ -440,24 +440,30 @@
   .staff-section-list__info
     padding: 5px
   .estetic-page .main-section__header,
-  .therapy-page .main-section__header
+  .therapy-page .main-section__header,
+  .main-page .main-section__header
     font-size: 36px
   .estetic-page .main-section__subheader,
-  .therapy-page .main-section__subheader
+  .therapy-page .main-section__subheader,
+  .main-page .main-section__subheader
     font-size: 24px
     margin-bottom: 210px
   .estetic-page .main-section .esta__decor,
   .estetic-page .main-section .esta__decor2,
   .therapy-page .main-section .esta__decor,
-  .therapy-page .main-section .esta__decor2  
+  .therapy-page .main-section .esta__decor2,
+  .main-page .main-section .esta__decor,
+  .main-page .main-section .esta__decor2,
     display: none
   .estetic-page .main-section__right .girl_decor,
-  .therapy-page .main-section__right .girl_decor
+  .therapy-page .main-section__right .girl_decor,
+  .main-page  .main-section__right .girl_decor
     width: 509px
     height: 531px
     background-size: cover
   .estetic-page,
-  .therapy-page
+  .therapy-page,
+  .main-page  
     .main-section__right
       left: 32%
       position: absolute
@@ -613,23 +619,46 @@
     display: none
   .burger
     left: 0
-  .burger-list__link
-    color: #ffffff
-  .implantation-page.estetic-page,
-  .implantation-page.therapy-page
+  //.burger-list__link
+  //  color: #ffffff
+  .implantation-page,
+  .estetic-page,
+  .therapy-page,
+  .main-page
     .main-section__header
       margin-top: 35px
-      padding-right: 50px
+      padding-right: 250px
     .main-section__right
       left: 50%
       .girl_decor
-        width: 387px
-        height: 509px
-        background: url(../img/implant/girl_mobile.png) no-repeat center
     .main-section__subheader
       margin-bottom: 145px
     .care-section .header, .care-section2 .header
       padding: 0 10px
+  .implantation-page
+   .main-section__right
+     .girl_decor
+       width: 387px
+       height: 509px
+       background: url(../none.png) no-repeat center
+  .estetic-page
+   .main-section__right
+     .girl_decor
+       //width: 287px
+       //height: 509px
+       //background-size: 600px
+       //background: url(../img/implant/girl_mobile.png) no-repeat center
+  .therapy-page
+   .main-section__right
+     .girl_decor
+       //background: url(../img/implant/girl_mobile.png) no-repeat center
+  .main-page
+   .main-section__right
+     .girl_decor
+       //background: url(../img/implant/girl_mobile.png) no-repeat center
+  
+
+
   .implantation-page .safe-implant-section .safe-implant-list
     flex-wrap: wrap
   .safe-implant-list__item

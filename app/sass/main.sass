@@ -68,8 +68,8 @@ body
 		height: 29px
 		position: absolute
 		top: 0
-		left: 50%
-		transform: translateX(-50%)
+		left: 50% 
+		transform: translateX(-50%) 
 		background: url(../img/arrow_link.png) no-repeat bottom center
 		transition: 0.15s all linear
 	&__border
@@ -80,10 +80,6 @@ body
 		bottom: 0
 		background: url(../img/arrow_border.png)
 
-.main-page
-	.main-section
-		&__left
-			margin-right: 60px;
 	
 .main-section
 	.container
@@ -376,7 +372,7 @@ body
 	&__decor1
 		position: absolute
 		width: 592px
-		height: 619px
+		height: 740px
 		background: url(../img/micro.png) no-repeat center
 		top: -79px
 		left: -444px
@@ -568,7 +564,7 @@ body
 		display: flex
 		flex-direction: column
 		.parking
-      	  //font-size: 20px
+      	  //фfont-size: 20px
       	  //font-weight: 600
       	  //text-transform: uppercase
       	  text-transform: lowercase
@@ -791,15 +787,9 @@ body
 
 .main-page
 	.main-section
-		.container
-			position: relative
+		//margin-bottom: 150px
 		.map-section__metro
 			display: inline-block
-	.page-header
-		position: absolute
-		top: 25px
-		z-index: 23
-		width: calc(100% - 30px)
 	
 .estetic-page
 	.form-scroll
@@ -829,7 +819,7 @@ body
 			color: #00bbc2
 		&__subheader
 			font-size: 44px
-			font-weight: 600
+			//font-weight: 600
 			margin-bottom: 70px
 			//color: $blue
 			color: #00bbc2
@@ -873,18 +863,10 @@ body
 	.esta__decor2
 		color: #dedbf0
 
-.therapy-page
-	.form-scroll
-		.container
-			padding-bottom: 40px
-	.form 
-		.header.header.header
-			font-size: 33px
-		.text-decor
-			left: 30px
-			&--inverted
-				right: 30px
-				left: inherit
+
+.main-page
+	.page-header-menu
+		background-color: #55aae0
 	.main-section
 		//background: url(../img/therapy/back1.jpg) no-repeat center
 		background-color: #b7d5e9
@@ -892,37 +874,46 @@ body
 		.burger
 			&-list
 				&__link
-					color: #368fc8
+					color: #fff
 					&:hover
 						&::before
-							background-color: #368fc8
+							background-color: #005992
 						&::after
 							width: 25px
 					&::after
-						background-color: #368fc8
+						background-color: #005992
 					&:hover
-						color: #368fc8
+						color: #005992
 		.container
 			padding-bottom: 0
 			position: relative
 			padding-top: 25px
 		&__header
-			font-size: 54px
+			font-weight: 600
+			font-size: 56px
 			margin-top: 64px
 			margin-bottom: 20px
+			padding-right: 0px
 			position: relative
-			color: #368fc8
+			color: #feffff
 			z-index: 2
 		&__subheader
-			font-size: 44px
-			font-weight: 600
+			font-size: 36px
+			//font-weight: 600
 			margin-bottom: 70px
-			color: #368fc8
+			color: #eaf2f9
+			&:hover
+				text-decoration: none
+		&__slogan
+			font-size: 25px
+			font-weight: 200
+			margin-bottom: 70px
+			color: #005992
 			&:hover
 				text-decoration: none
 		&__left
 			width: auto
-			padding-bottom: 40px
+			padding-bottom: 60px
 			margin-right: 30px
 		&__right
 			align-self: flex-end
@@ -936,9 +927,9 @@ body
 		.text-decor
 			top: 28px
 			&__line
-				background-color: #368fc8
+				background-color: #fafdff
 			&__circle
-				border-color: #368fc8
+				border-color: #fafdff
 		.esta__decor,
 		.esta__decor2
 			font-size: 252px
@@ -955,6 +946,87 @@ body
 			top: 330px
 
 
+
+.therapy-page
+	.form-scroll
+		.container
+			padding-bottom: 40px
+	.form 
+		.header.header.header
+			font-size: 33px
+		.text-decor
+			left: 30px
+			&--inverted
+				right: 30px
+				left: inherit
+	.main-section
+		background: url(../img/estet/back1.jpg) no-repeat center
+		//background-color: #b7d5e9
+		background-size: cover
+		.burger
+			&-list
+				&__link
+					color: #00898e
+					&:hover
+						&::before
+							background-color: #00898e
+						&::after
+							width: 25px
+					&::after
+						background-color: #00898e
+					&:hover
+						color: #00898e
+		.container
+			padding-bottom: 0
+			position: relative
+			padding-top: 25px
+		&__header
+			font-size: 54px
+			margin-top: 64px
+			margin-bottom: 20px
+			position: relative
+			color: #0fb0b6
+			z-index: 2
+		&__subheader
+			font-size: 44px
+			//font-weight: 600
+			margin-bottom: 70px
+			color: #0fb0b6
+			&:hover
+				text-decoration: none
+		&__left
+			width: auto
+			padding-bottom: 40px
+			margin-right: 30px
+		&__right
+			align-self: flex-end
+			margin-right: -20px
+			margin-top: -100px
+			pointer-events: none
+			.girl_decor
+				width: 495px
+				height: 506px
+				background: url(../img/therapy/girl2.png) no-repeat center
+		.text-decor
+			top: 28px
+			&__line
+				background-color: #0fb0b6
+			&__circle
+				border-color: #0fb0b6
+		.esta__decor,
+		.esta__decor2
+			font-size: 252px
+			position: absolute
+			line-height: 1
+			font-weight: 700
+			color: #cadee5
+			text-shadow: 0 15px 25px rgba(0,0,0,.1)
+		.esta__decor
+			left: -550px
+			top: 100px
+		.esta__decor2
+			right: -690px
+			top: 330px
 .care-section2,
 .care-section
 	.container
@@ -1593,6 +1665,8 @@ body
 			background-image: url(../img/estet/close.png)
 
 .implantation-page
+	.page-header-menu
+		background-color: #9a8dc1
 	.main-section
 		background: url(../img/implant/implant_back.jpg) no-repeat center
 		background-size: cover

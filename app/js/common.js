@@ -214,26 +214,28 @@ $(function() {
 			})
 		};
 
+/*
 		const handleActiveFirstPhoto = () => {
 			photoElemMain.classList.add('activate');
 		}
 
 		window.addEventListener('scroll', _debounce(handlePhotoSections, 100));
-
 		setTimeout(() => {
 			handleActiveFirstPhoto();
 		}, 500);
+*/
 	};
 	
 	const navigationInit = () => {
 		const headerElement = document.querySelector('.page-header');
 
 		const firstLink = document.querySelector('.main-section__anchor');
-
+/*
 		firstLink.addEventListener('click', e => {
 			const anchorOffset = document.querySelector('.trust-section').offsetTop - headerElement.offsetHeight;
 			$("html, body").animate({ scrollTop: anchorOffset }, 666);
 		})
+		*/
 	}
 
 	const headerMenuInit = () => {
