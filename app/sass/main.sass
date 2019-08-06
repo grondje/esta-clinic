@@ -1197,8 +1197,26 @@ body
 	padding-top: 20px
 .cons-section
 	background-color: #fcfcfc
-
-.restavration-section
+.stories-section,
+	&__decor
+		width: 592px
+		height: 719px
+		background: url(../img/stories/cats.png) no-repeat center
+		position: absolute
+		right: -350px
+		top: 380px
+		z-index: 4
+	.container
+		padding-top: 75px
+		padding-bottom: 100px
+		position: relative
+	.header
+		font-size: 48px
+		position: relative
+		text-transform: uppercase
+		.text-decor
+			top: 26px
+.restavration-section,
 .vinir-install-section,
 .removal-section,
 .implant-install-section
@@ -1224,8 +1242,18 @@ body
 .vinir-install-section
 	background-color: #fbfbfb
 
+
 .therapy-page .vinir-install-section__decor
 		top: 380px
+
+
+.stories-section
+	background-color: #fbfbfb
+	h3
+		margin-top: 70px
+
+.stories-section__decor
+	top: 380px
 		
 .removal-section,
 .care-section2
@@ -2250,5 +2278,8 @@ body
 			//background-color: #eeeeee
 			.arrow-decor__border
 				background: url(../img/implant/border_img_white.png) no-repeat center
+.therapy-page .nobg
+	background: none!important
+
 
 @import "media" // Always at the end

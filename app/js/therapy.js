@@ -36,16 +36,21 @@ $(function () {
     };
 
     const $owl = $('body').find(sliderName);
+    if (owlPrevButton != null) {
+      owlPrevButton.addEventListener('click', function () {
+        $owl.trigger('prev.owl.carousel');
+      });
+    }
 
-    owlPrevButton.addEventListener('click', function () {
-      $owl.trigger('prev.owl.carousel');
-    });
+    if (owlNextButton != null) {  
+      owlNextButton.addEventListener('click', function () {
+        $owl.trigger('next.owl.carousel');
+      });
+    }
 
-    owlNextButton.addEventListener('click', function () {
-      $owl.trigger('next.owl.carousel');
-    });
-
-    $owl.owlCarousel(carouselSettings).addClass('owl-carousel owl-theme');
+    if ($owl != null) {
+      $owl.owlCarousel(carouselSettings).addClass('owl-carousel owl-theme');
+    }
   };
 
   const formInit = () => {
@@ -125,10 +130,12 @@ $(function () {
     
 	const headerElement = document.querySelector('.page-header');
 	const firstLink = document.querySelector('.zapisatsa');
+  if (firstLink) {
 		firstLink.addEventListener('click', e => {
 			const anchorOffset = document.querySelector('.form-scroll').offsetTop - headerElement.offsetHeight;
 			$("html, body").animate({ scrollTop: anchorOffset }, 666);
 		})
+  }
 
     const onNavigationLinkClick = (e) => {
       const anchor = e.target.getAttribute('href');
@@ -174,38 +181,41 @@ $(function () {
 
   const menuInit = () => {
     const menuContainer = document.querySelector('.burger');
-    const menuButton = menuContainer.querySelector('.burger__button');
-    const menuList = menuContainer.querySelector('.burger-list__container');
+    if (menuContainer) {
+      const menuButton = menuContainer.querySelector('.burger__button');
+      const menuList = menuContainer.querySelector('.burger-list__container');
 
-    const onBurgerButtonClick = (e) => {
-      let timeout;
-      const currentTarget = e.currentTarget;
-      currentTarget.classList.toggle('open');
-      menuList.classList.toggle('active');
-      
-      if (currentTarget.classList.contains('open') && menuList.classList.contains('active')) {
-        setTimeout(() => {
-          currentTarget.classList.remove('open');
-          menuList.classList.remove('active');
-        }, );
-      } else {
-        clearTimeout(timeout);
+      menuButton.addEventListener('click', e => {
+        onBurgerButtonClick(e);
+      });
+
+      const onBurgerButtonClick = (e) => {
+        let timeout;
+        const currentTarget = e.currentTarget;
+        currentTarget.classList.toggle('open');
+        menuList.classList.toggle('active');
+        
+        if (currentTarget.classList.contains('open') && menuList.classList.contains('active')) {
+          setTimeout(() => {
+            currentTarget.classList.remove('open');
+            menuList.classList.remove('active');
+          }, );
+        } else {
+          clearTimeout(timeout);
+        }
       }
-    }
 
-    const showBurgerOnScroll = () => {
+       const showBurgerOnScroll = () => {
       const firstScreen = document.querySelector('.main-section');
 
       _isFirstScreenInViewport(firstScreen)
-        ? menuContainer.classList.remove('active')
-        : menuContainer.classList.add('active');
-    };
+          ? menuContainer.classList.remove('active')
+          : menuContainer.classList.add('active');
+      };
 
-    menuButton.addEventListener('click', e => {
-      onBurgerButtonClick(e);
-    });
-
-    window.addEventListener('scroll', _debounce(showBurgerOnScroll, 100));
+   window.addEventListener('scroll', _debounce(showBurgerOnScroll, 100));
+    }
+   
   }
 
   const headerMenuInit = () => {
