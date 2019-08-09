@@ -2281,5 +2281,53 @@ body
 .therapy-page .nobg
 	background: none!important
 
+.redirect-tile-list
+	display: flex
+	margin-top: 100px
+.redirect-tile
+	&__icon
+		height: 51px
+		display: flex
+		width: 100%
+		align-items: center
+		justify-content: center
+		margin-bottom: 10px
+	&__header
+		font-size: 24px
+		color: $clear
+		font-weight: 700
+		text-transform: uppercase
+		height: 56px
+		margin-bottom: 15px
+	&__description
+		margin-bottom: 40px
+	&__item
+		width: 25%
+		padding: 0 10px
+		display: flex
+		flex-direction: column
+		margin-top: 30px
+	&__container
+		background: #45c4c9
+		padding: 20px 10px 30px 10px
+		text-align: center
+		flex-grow: 1
+		box-shadow: 0 6px 13px 2px rgba(0,0,0,.1)
+		&:hover
+			background: linear-gradient(45deg, #e3813a 0%, #fbc126 100%)
+	&__link
+		cursor: pointer
+		color: $clear
+		font-weight: 700
+		font-size: 18px
+		display: flex
+		align-items: center
+		justify-content: center
+		&:hover,
+		&:focus
+			color: $clear
+			text-decoration: none
+		img
+			margin-left: 10px
 
 @import "media" // Always at the end
