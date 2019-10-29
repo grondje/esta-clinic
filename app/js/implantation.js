@@ -24,6 +24,7 @@ $(function () {
     const owlPrevButton = document.querySelector(prevButton);
     const owlNextButton = document.querySelector(nextButton);
 
+    
     const carouselSettings = {
       loop: true,
       dots: false,
@@ -36,15 +37,21 @@ $(function () {
 
     const $owl = $('body').find(sliderName);
 
+  if (owlPrevButton != null) {
     owlPrevButton.addEventListener('click', function () {
       $owl.trigger('prev.owl.carousel');
     });
+  }
 
+if (owlNextButton != null) {
     owlNextButton.addEventListener('click', function () {
       $owl.trigger('next.owl.carousel');
     });
+  }
 
+if ($owl != null) {
     $owl.owlCarousel(carouselSettings).addClass('owl-carousel owl-theme');
+  }
   };
 
   const formInit = () => {

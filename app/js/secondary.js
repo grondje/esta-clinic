@@ -37,15 +37,21 @@ $(function () {
 
     const $owl = $('body').find(sliderName);
 
-    owlPrevButton.addEventListener('click', function () {
-      $owl.trigger('prev.owl.carousel');
-    });
+    if (owlPrevButton != null) {
+      owlPrevButton.addEventListener('click', function () {
+        $owl.trigger('prev.owl.carousel');
+      });
+    }
 
-    owlNextButton.addEventListener('click', function () {
-      $owl.trigger('next.owl.carousel');
-    });
+    if (owlNextButton != null) {
+      owlNextButton.addEventListener('click', function () {
+        $owl.trigger('next.owl.carousel');
+      });
+    }
 
-    $owl.owlCarousel(carouselSettings).addClass('owl-carousel owl-theme');
+    if ($owl) {
+      $owl.owlCarousel(carouselSettings).addClass('owl-carousel owl-theme');
+    }
   };
 
   const formInit = () => {
